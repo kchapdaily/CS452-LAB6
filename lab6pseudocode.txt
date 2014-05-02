@@ -2,11 +2,30 @@ Kevin Chapman
 Lab 6
 
 1) To create a plane:
+	-using a vertex shader that takes a position in and assigns it to gl_Position.
+	-using an empty fragment shader.
+	-create program from shaders, generate a vao and vbo.
+	-load position vector for the shape of the plane into vbo, bind vbo to vao.
+	-draw it.
 
 2) To create a polyhedron on the plane:
+	-using the same shader
+	-generate a new vao.
+	-add position array to vbo, bind vbo to new vao.
+	-draw it.
 
 3) To create a light:
+	-pass normals array into vertex shader.
+	-pass light model info (eg phong lighting model: ambient, diffuse, specular) for light and material to fragment shaders.
+	-in vertex shader: calculate model view projection matrix and write to gl_Position.
+	-in fragment shader: calculate color based on the addition of ambient, diffuse, and specular products normalized with normal vectors and light position.
 
 4) To create a shadow cast by the object:
+	-render the shadow map and render the target.
+	-pass model view matrix into vertex shader.
+	-render a depth texture.
+	-swap front and back buffers if double buffering.
+	-pass new model view projection matrix to vertex shader.
 
-5) To create camera controls that spin around the cube:
+5.) To create camera controls that spin around the cube:
+	-keyboard event handler that adjusts 'eye' in the look at function accordingly
