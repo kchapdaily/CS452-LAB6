@@ -1,0 +1,12 @@
+Kevin Chapman
+Lab 6
+
+1) To create a plane:
+
+2) To create a polyhedron on the plane:
+
+3) To create a light:
+
+4) To create a shadow cast by the object:
+
+5) To create camera controls that spin around the cube:
